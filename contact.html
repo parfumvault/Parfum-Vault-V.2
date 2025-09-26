@@ -1,75 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Me</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f2f2f2;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Parfum Vault</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link rel="stylesheet" href="contact-style.css">
 
-    .contact-container {
-      max-width: 500px;
-      margin: auto;
-      background: white;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      text-align: center;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
-      margin-top: 15px;
-    }
-
-    input, textarea {
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px;
-      background-color: #007BFF;
-      border: none;
-      color: white;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="Logo.png" type="image/x-icon">
 </head>
 <body>
-  <div class="contact-container">
-    <h2>Contact Me</h2>
-    <form action="mailto:Parfumvaultco@gmail.com" method="POST" enctype="text/plain">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="Name" required>
 
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="Email" required>
+    <header class="header">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Parfum Vault</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pages/shop.html">Shop Our Collection</a>
+                <a href="pages/blog.html">Our Story</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-      <label for="message">Your Message:</label>
-      <textarea id="message" name="Message" rows="6" required></textarea>
+    <main class="main-content">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Get in Touch</h1>
+                <p>We'd love to hear from you. Please fill out the form below.</p>
+            </div>
+            
+            <form action="mailto:Parfumvaultco@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="Name" placeholder="e.g., Jane Doe" required>
+                </div>
 
-      <button type="submit">Send</button>
-    </form>
-  </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="Email" placeholder="e.g., jane.doe@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="Message" rows="6" placeholder="Your questions or comments..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Parfum Vault. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
