@@ -88,7 +88,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(74,44,44), rgba(74,44,44)), url('https://images.unsplash.com/photo-1591147712399-52c6f131a90f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    background: linear-gradient(rgba(74,44,44), rgba(74,44,44)), url('https://submits.unsplash.com/photo-1591147712399-52c6f131a90f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
     color: #ffffff;
     text-align: center;
     padding: 100px 20px;
@@ -637,7 +637,7 @@ textarea {
 /* Submit Button */
 .submit-btn {
     padding: 15px;
-    background-color: var(--primary-color);
+    background-color: rgba(138, 61, 16, 0.644);
     border: none;
     color: white;
     font-size: 1.1rem;
@@ -657,5 +657,5 @@ textarea {
     text-align: center;
     padding: 20px;
     background-color: #e9ecef;
-    color: #6c757d;
+    color: #b7bbbe;
 }
